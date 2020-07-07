@@ -1,0 +1,13 @@
+### Get all blobs
+GET http://localhost:8081/service/rest/v1/blobstores
+Authorization: Basic YWRtaW46YWRtaW4=
+
+### Create a file-based blob
+POST http://localhost:8081/service/rest/v1/blobstores/file/
+Authorization: Basic YWRtaW46YWRtaW4=
+Content-Type: application/json
+
+{
+    "path": "/nexus-data/blobs/x",
+    "name": "x"
+}
